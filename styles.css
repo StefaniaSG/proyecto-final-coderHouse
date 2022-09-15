@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@200;300;400&display=swap");
+
+:root {
+  --blanco: #ffffff;
+  --primario: #f2f2f4;
+  --secundario: #ffe673;
+  --terciario: #ffbf69;
+  --cuaternario: #8ecae6;
+}
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: "Josefin Slab", serif;
+}
+
+.interletrado {
+  letter-spacing: 0.5em;
+}
+
+/* IMAGENES HEADER */
+
+header {
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-inicio {
+  background-image: url("./imagenes/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg");
+}
+
+.header-lafl {
+  background-image: url("./imagenes/LAFL/night-road.jpg");
+}
+
+.header-kqft {
+  background-image: url(./imagenes/KQFT/kqft\ fondo.jpg);
+}
+
+.header-8 {
+  height: 8vh;
+}
+
+/* BARRA DE NAVEGACION */
+
+.nav-links {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: rgb(255 255 255/90%);
+}
+
+.nav-opacidad-40 {
+  background-color: rgb(255 255 255/40%);
+}
+
+.nav-opacidad-75 {
+  background-color: rgb(255 255 255/75%);
+}
+
+/* SECCION BIENVENIDO */
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-inicio {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 30px auto 20px auto;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.titulo-inicio::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 200px;
+  top: 50%;
+}
+
+.titulo-inicio::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 200px;
+  top: 50%;
+}
+
+.p-inicio {
+  text-align: center;
+}
+
+/* ARTICULOS LIBROS */
+
+.primer-articulo,
+.segundo-articulo {
+  background-color: var(--blanco);
+  width: 15em;
+  height: 20em;
+  margin: 1.5em 2em;
+  margin-bottom: 90px;
+  padding: 2.5em 1.5em;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.title-kqft,
+.title-lafl {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+.circulo-fondo {
+  background-color: var(--terciario);
+  width: 9em;
+  height: 9em;
+  border-radius: 100%;
+  padding: 0.8em;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contenedor-articulos {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sinopsis {
+  font-size: 1em;
+  margin: 20px 0;
+}
+
+/* TIENDA */
+
+.banner {
+  background-color: var(--terciario);
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90vw;
+  max-width: 1200px;
+  height: 140px;
+}
+
+.banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--blanco);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  margin: 30px auto;
+  width: 30vw;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px 0;
+  height: 125px;
+  transform: translateY(-8%);
+  align-items: center;
+}
+
+/* BOTONES */
+
+.boton a,
+.boton-tienda a {
+  text-decoration: none;
+  color: #000;
+}
+
+.boton-tienda,
+.boton {
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.boton-tienda {
+  width: 100px;
+  background-color: var(--terciario);
+}
+
+.boton {
+  background-color: var(--terciario);
+}
+
+.boton:hover,
+.boton-tienda:hover {
+  cursor: pointer;
+  background-color: var(--secundario);
+  transition: all ease-in-out 0.5s;
+}
+
+/* PAGINAS LIBROS */
+
+/* ETIQUETA IMAGEN */
+.contenedor-etiqueta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 400px;
+  margin-right: 2em;
+}
+
+.etiqueta {
+  background-color: var(--blanco);
+  display: inline;
+  padding: 0.8em;
+  font-weight: 700;
+  border-radius: 25px;
+}
+
+/* SINOPSIS */
+
+.contenedor-sinopsis {
+  max-width: 750px;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+/* GALERIA */
+
+.galeria {
+  background-color: var(--cuaternario);
+  display: flex;
+  justify-content: center;
+}
+
+.galeria-box {
+  height: 150px;
+  width: 125px;
+  background-color: var(--blanco);
+  margin: 20px;
+}
+
+.galeria-titulo {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.galeria-titulo h2 {
+  background-color: var(--cuaternario);
+  padding: 1em 1.7em;
+  border-radius: 35px;
+  text-transform: uppercase;
+}
+
+/* PRIMERA FRASE */
+
+.flex-frase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 1em;
+  margin: 100px auto;
+}
+
+.flex-frase p {
+  font-size: 1.5em;
+}
+
+.flex-frase div i {
+  font-size: 4em;
+}
+
+.icono-1 {
+  margin-right: 450px;
+}
+
+.icono-2 {
+  margin-left: 450px;
+}
+
+/* SECCION PERSONAJES */
+
+.personajes-titulo,
+.divisor {
+  margin: 20px auto;
+}
+
+.divisor,
+.personajes-titulo h2 {
+  background-color: var(--cuaternario);
+  padding: 1em 1.7em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto 50px auto;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.divisor {
+  height: 35px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* DESCRIPCION DE LOS PERSONAJES */
+
+.contenedor-personajes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.caja-imagen {
+  height: 150px;
+  width: 125px;
+  background-color: var(--cuaternario);
+  margin: 20px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.alinear-izquierda {
+  text-align-last: left;
+}
+.alinear-derecha {
+  text-align-last: right;
+}
+
+/* SEGUNDO LIBRO ANUNCIO */
+
+.portada {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.shutup {
+  background-image: url(./imagenes/LAFL/SHUT\ UP.png);
+}
+
+.tqft {
+  background-image: url(./imagenes/KQFT/TQFT.png);
+}
+
+.anuncio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blanco);
+  height: 300px;
+  width: 400px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* COLORES PAGINAS */
+
+.celeste {
+  background-color: var(--cuaternario) !important;
+}
+
+.amarillo {
+  background-color: var(--secundario) !important;
+}
+
+/* SEGUNDA FRASE */
+
+.segunda-frase {
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 100px;
+}
+
+.iconos-footer {
+  background-color: var(--terciario);
+  background-size: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 13px;
+  margin: 30px auto;
+}
+
+.icono-wattpad {
+  height: 16px;
+  width: 16px;
+  margin-top: 2px;
+}
+
+.iconos-footer i {
+  color: #000;
+}
+
+/* PAGINA SOBRE MI */
+
+/* INICIO */
+.bloque-naranja {
+  background-color: var(--terciario);
+  height: 60vh;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-sobre-mi {
+  height: 300px;
+  width: 300px;
+}
+
+.titulo-sobre-mi {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.titulo-sobre-mi h1 {
+  background-color: var(--blanco);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.titulo-sobre-mi p {
+  background-color: var(--blanco);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.caja-foto-sobre-mi {
+  background-color: var(--terciario);
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.contenedor-sobre-mi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  max-width: 700px;
+  margin: 0 auto;
+  column-gap: 2em;
+}
+
+.contenedor-sobre-mi div h2 {
+  text-align: center;
+  background-color: var(--terciario);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 30px auto;
+}
+
+/* PAGINA CONTACTO */
+.margen {
+  margin-top: 150px;
+}
+
+.contenedor-form {
+  display: flex;
+  margin-top: 90px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+}
+
+.flex-column input,
+.flex-column textarea {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #ffd093;
+  border: none;
+}
