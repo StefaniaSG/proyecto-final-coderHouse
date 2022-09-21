@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@200;300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@200;300;400&display=swap");
+
 
 :root {
   --blanco: #ffffff;
@@ -38,7 +38,8 @@ header {
 }
 
 .header-inicio {
-  background-image: url("./imagenes/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg");
+  background: linear-gradient(0deg, rgb(255 255 255 / 1) , transparent 30%), url("./imagenes/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg") no-repeat center center / cover;
+
 }
 
 .header-lafl {
