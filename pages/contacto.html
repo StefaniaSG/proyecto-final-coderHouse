@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../imagenes/logo.png" />
 
     <!-- LINK a FontAwesome para íconos -->
     <link
@@ -38,12 +39,12 @@
       </div>
 
       <div class="contenedor-form">
-        <div>
+        <div class="ocultar">
           <img src="../imagenes/contacto.png" alt="Icono de contacto" />
         </div>
 
-        <form>
-          <div class="flex-column">
+        <form class="contenedor-campos">
+          <div class="campo">
             <label for="nombre">Nombre:</label>
             <input
               type="text"
@@ -53,7 +54,7 @@
             />
           </div>
 
-          <div class="flex-column">
+          <div class="campo">
             <label for="email">Email:</label>
             <input
               type="email"
@@ -63,12 +64,12 @@
             />
           </div>
 
-          <div class="flex-column">
+          <div class="campo">
             <label for="asunto">Asunto:</label>
             <input type="text" id="asunto" placeholder="Ingresa el asunto" />
           </div>
 
-          <div class="flex-column">
+          <div class="campo">
             <label for="mensaje">Mensaje:</label>
             <textarea
               id="mensaje"
