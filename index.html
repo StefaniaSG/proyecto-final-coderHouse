@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="./imagenes/logo.png" />
 
-    <!-- LINK a Animate para animaciones -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
     <!-- LINK a FontAwesome para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+
+    <!-- LINK a AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header-inicio">
@@ -45,7 +42,12 @@
     </main>
 
     <section class="contenedor-articulos">
-      <article class="primer-articulo">
+      <article
+        class="primer-articulo"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="500"
+      >
         <div class="flex circulo-fondo">
           <h2 class="title-lafl flex">
             Love At <br />
@@ -59,7 +61,12 @@
         <button class="boton"><a href="./pages/LAFL.html">Mas</a></button>
       </article>
 
-      <article class="segundo-articulo">
+      <article
+        class="segundo-articulo"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-duration="500"
+      >
         <div class="flex circulo-fondo">
           <h2 class="title-kqft flex">
             Kings, Queens, <br />
@@ -102,5 +109,10 @@
       </div>
       <p class="footer-copyright">Copyright 2022 - All rights reserved.</p>
     </footer>
+    <!-- LINK a AOS para animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -13,6 +13,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+
+    <!-- LINK a AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -83,7 +86,7 @@
         <div class="personajes-titulo">
           <h2 class="interletrado">Personajes</h2>
         </div>
-        <article class="contenedor-personajes">
+        <article data-aos="fade-up" class="contenedor-personajes">
           <div class="caja-imagen"></div>
           <div class="alinear-izquierda">
             <h3>Skylar Miller</h3>
@@ -94,7 +97,10 @@
           </div>
         </article>
 
-        <article class="contenedor-personajes column-reverse">
+        <article
+          data-aos="fade-up"
+          class="contenedor-personajes column-reverse"
+        >
           <div class="alinear-derecha">
             <h3>Colson Brook</h3>
             <p>
@@ -105,7 +111,7 @@
           <div class="caja-imagen"></div>
         </article>
 
-        <article class="contenedor-personajes">
+        <article data-aos="fade-up" class="contenedor-personajes">
           <div class="caja-imagen"></div>
           <div class="alinear-izquierda">
             <h3>Sean Anderson</h3>
@@ -116,7 +122,10 @@
           </div>
         </article>
 
-        <article class="contenedor-personajes column-reverse">
+        <article
+          data-aos="fade-up"
+          class="contenedor-personajes column-reverse"
+        >
           <div class="alinear-derecha">
             <h3>Holden Miller</h3>
             <p>
@@ -181,5 +190,11 @@
       </div>
       <p class="footer-copyright">Copyright 2022 - All rights reserved.</p>
     </footer>
+
+    <!-- LINK a AOS para animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

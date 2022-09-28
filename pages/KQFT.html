@@ -13,6 +13,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+
+    <!-- LINK a AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header-kqft">
@@ -85,7 +88,7 @@
         <div class="personajes-titulo">
           <h2 class="interletrado amarillo">Personajes</h2>
         </div>
-        <article class="contenedor-personajes">
+        <article data-aos="fade-up" class="contenedor-personajes">
           <div class="caja-imagen amarillo"></div>
           <div class="alinear-izquierda">
             <h3>Príncipe Buck</h3>
@@ -96,7 +99,10 @@
           </div>
         </article>
 
-        <article class="contenedor-personajes column-reverse">
+        <article
+          data-aos="fade-up"
+          class="contenedor-personajes column-reverse"
+        >
           <div class="alinear-derecha">
             <h3>Jillian Barnes</h3>
             <p>
@@ -107,7 +113,7 @@
           <div class="caja-imagen amarillo"></div>
         </article>
 
-        <article class="contenedor-personajes">
+        <article data-aos="fade-up" class="contenedor-personajes">
           <div class="caja-imagen amarillo"></div>
           <div class="alinear-izquierda">
             <h3>El equipo real</h3>
@@ -118,7 +124,10 @@
           </div>
         </article>
 
-        <article class="contenedor-personajes column-reverse">
+        <article
+          data-aos="fade-up"
+          class="contenedor-personajes column-reverse"
+        >
           <div class="alinear-derecha">
             <h3>La banda</h3>
             <p>
@@ -135,7 +144,7 @@
           <h2 class="interletrado amarillo">La Corona</h2>
         </div>
 
-        <article class="contenedor-personajes">
+        <article data-aos="fade-up" class="contenedor-personajes">
           <div class="caja-imagen amarillo"></div>
           <div class="alinear-izquierda">
             <h3>Taythor</h3>
@@ -146,7 +155,10 @@
           </div>
         </article>
 
-        <article class="contenedor-personajes column-reverse">
+        <article
+          data-aos="fade-up"
+          class="contenedor-personajes column-reverse"
+        >
           <div class="alinear-derecha">
             <h3>Heredon</h3>
             <p>
@@ -157,7 +169,7 @@
           <div class="caja-imagen amarillo"></div>
         </article>
 
-        <article class="contenedor-personajes">
+        <article data-aos="fade-up" class="contenedor-personajes">
           <div class="caja-imagen amarillo"></div>
           <div class="alinear-izquierda">
             <h3>Golphier</h3>
@@ -168,7 +180,10 @@
           </div>
         </article>
 
-        <article class="contenedor-personajes column-reverse">
+        <article
+          data-aos="fade-up"
+          class="contenedor-personajes column-reverse"
+        >
           <div class="alinear-derecha">
             <h3>Mirnocoft</h3>
             <p>
@@ -179,7 +194,7 @@
           <div class="caja-imagen amarillo"></div>
         </article>
 
-        <article class="contenedor-personajes">
+        <article data-aos="fade-up" class="contenedor-personajes">
           <div class="caja-imagen amarillo"></div>
           <div class="alinear-izquierda">
             <h3>Yreister</h3>
@@ -244,5 +259,11 @@
       </div>
       <p class="footer-copyright">Copyright 2022 - All rights reserved.</p>
     </footer>
+
+    <!-- LINK a AOS para animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

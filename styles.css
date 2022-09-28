@@ -3,6 +3,7 @@
 
 :root {
   --blanco: #ffffff;
+  --negro: #000;
   --primario: #f2f2f4;
   --secundario: #ffe673;
   --terciario: #ffbf69;
@@ -99,9 +100,10 @@ header {
 
 .nav-links li a {
   text-decoration: none;
-  display: flex;
-  justify-content: space-between;
   color: #000;
+  position: relative;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
 }
 
 .logo {
@@ -124,6 +126,29 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
   }
+}
+
+.nav-links li a:hover {
+  color: var(--secundario);
+}
+
+.nav-links li a::after {
+  content: "";
+  display: block;
+  background: var(--negro);
+  opacity: 0;
+  height: 4px;
+  max-width: 40px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  opacity: 1;
+  background: var(--secundario);
 }
 
 .nav-opacidad-40 {
