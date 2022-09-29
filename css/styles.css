@@ -61,16 +61,16 @@ header {
 
 .header-inicio {
   background: linear-gradient(0deg, rgb(255 255 255 / 1), transparent 30%),
-    url("./imagenes/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg") no-repeat center
+    url("../imagenes/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg") no-repeat center
       center / cover;
 }
 
 .header-lafl {
-  background-image: url("./imagenes/LAFL/night-road.jpg");
+  background-image: url("../imagenes/LAFL/night-road.jpg");
 }
 
 .header-kqft {
-  background-image: url(./imagenes/KQFT/kqft\ fondo.jpg);
+  background-image: url("../imagenes/KQFT/kqft-fondo.jpg");
 }
 
 .header-8 {
@@ -568,11 +568,11 @@ header {
   }
 
   .shutup {
-    background-image: url(./imagenes/LAFL/SHUT\ UP.png);
+    background-image: url("../imagenes/LAFL/SHUt-UP.png");
   }
 
   .tqft {
-    background-image: url(./imagenes/KQFT/TQFT.png);
+    background-image: url("../imagenes/KQFT/TQFT.png");
   }
 }
 
