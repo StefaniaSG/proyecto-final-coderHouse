@@ -1,0 +1,19 @@
+.contenedor-etiqueta {
+  @include flex(row, flex-end, flex-end);
+  height: 400px;
+  margin-right: 2em;
+}
+
+.etiqueta {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .etiqueta {
+    background-color: $color-blanco;
+    display: inline;
+    padding: 0.8em;
+    font-weight: 700;
+    border-radius: 25px;
+  }
+}

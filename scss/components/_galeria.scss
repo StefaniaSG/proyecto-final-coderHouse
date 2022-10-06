@@ -1,0 +1,31 @@
+.galeria {
+  background-color: $color-cuaternario;
+  display: flex;
+  justify-content: center;
+}
+
+.galeria-box {
+  height: 150px;
+  width: 125px;
+  background-color: $color-blanco;
+  margin: 20px;
+}
+
+.galeria-titulo {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+
+  h2 {
+    background-color: $color-cuaternario;
+    padding: 0.5em;
+    border-radius: 35px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .galeria-titulo h2 {
+    padding: 1em 1.7em;
+  }
+}

@@ -1,0 +1,41 @@
+.flex-frase {
+  @include flex(column, center, center);
+  column-gap: 1em;
+  margin: 50px auto;
+  padding: 40px;
+
+  p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+
+.icono-1 {
+  margin-right: 260px;
+}
+
+.icono-2 {
+  margin-left: 240px;
+}
+
+@media (min-width: 768px) {
+  .flex-frase {
+    margin: 100px auto;
+
+    p {
+      font-size: 1.5em;
+    }
+
+    div i {
+      font-size: 4em;
+    }
+  }
+
+  .icono-1 {
+    margin-right: 450px;
+  }
+
+  .icono-2 {
+    margin-left: 450px;
+  }
+}

@@ -1,0 +1,30 @@
+footer {
+  margin-top: 100px;
+}
+
+.iconos-footer {
+  background-color: $color-terciario;
+  background-size: auto;
+  @include flex(row, center, center);
+  gap: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 0;
+
+  i {
+    color: $color-negro;
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+  font-family: $fuente-primaria;
+  font-size: 13px;
+  margin: 30px auto;
+}
+
+.icono-wattpad {
+  height: 16px;
+  width: 16px;
+  margin-top: 2px;
+}

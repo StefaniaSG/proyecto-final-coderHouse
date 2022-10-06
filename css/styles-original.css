@@ -61,8 +61,7 @@ header {
 
 .header-inicio {
   background: linear-gradient(0deg, rgb(255 255 255 / 1), transparent 30%),
-    url("../imagenes/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg") no-repeat center
-      center / cover;
+    url("../imagenes/foto-inicio.jpg") no-repeat center center / cover;
 }
 
 .header-lafl {

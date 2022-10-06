@@ -1,0 +1,35 @@
+.banner-box {
+  @include flex(column, center, center);
+  background-color: $color-blanco;
+  box-shadow: 0px 0px 10px 0px #00000040;
+  -webkit-box-shadow: 0px 0px 10px 0px #00000040;
+  -moz-box-shadow: 0px 0px 10px 0px #00000040;
+  margin: 30px auto;
+  padding: 20px 0;
+  height: 125px;
+  transform: translateY(-8%);
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background-color: $color-terciario;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90vw;
+    max-width: 1200px;
+    height: 140px;
+  }
+
+  .banner-box {
+    width: 30vw;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-box h2 {
+    text-align: center;
+    margin: 10px 50px;
+  }
+}

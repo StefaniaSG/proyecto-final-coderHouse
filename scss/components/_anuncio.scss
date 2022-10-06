@@ -1,0 +1,28 @@
+.anuncio {
+  @include flex(column, center, center);
+  gap: 20px;
+  background-color: $color-blanco;
+  height: 300px;
+  width: 400px;
+  box-shadow: 0px 0px 10px 0px #00000040;
+  -webkit-box-shadow: 0px 0px 10px 0px #00000040;
+  -moz-box-shadow: 0px 0px 10px 0px #00000040;
+}
+
+@media (min-width: 768px) {
+  .portada {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+  }
+
+  .shutup {
+    background-image: url("../imagenes/LAFL/SHUt-UP.png");
+  }
+
+  .tqft {
+    background-image: url("../imagenes/KQFT/TQFT.png");
+  }
+}

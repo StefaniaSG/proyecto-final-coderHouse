@@ -1,0 +1,55 @@
+.bloque-naranja {
+  background-color: $color-terciario;
+  height: 60vh;
+  margin: 100px auto;
+  @include flex(row, center, center);
+}
+
+.imagen-sobre-mi {
+  height: 300px;
+  width: 300px;
+}
+
+.titulo-sobre-mi {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    background-color: $color-blanco;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  p {
+    background-color: $color-blanco;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+.caja-foto-sobre-mi {
+  background-color: $color-terciario;
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.contenedor-sobre-mi {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  place-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  column-gap: 2em;
+
+  div h2 {
+    text-align: center;
+    background-color: $color-terciario;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+  }
+}

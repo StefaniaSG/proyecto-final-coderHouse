@@ -1,0 +1,80 @@
+@media (min-width: 768px) {
+  .interletrado {
+    letter-spacing: 0.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .column-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .ocultar {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    justify-content: space-between;
+    gap: 1.5em;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) {
+  .titulo-inicio::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: $color-negro;
+    position: absolute;
+    left: 200px;
+    top: 50%;
+  }
+
+  .titulo-inicio::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: $color-negro;
+    position: absolute;
+    right: 200px;
+    top: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .primer-articulo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor-articulos {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .iconos-footer {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor-sobre-mi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

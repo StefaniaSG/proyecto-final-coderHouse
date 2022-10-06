@@ -1,0 +1,14 @@
+.contenedor-sinopsis {
+  max-width: 750px;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedor-sinopsis {
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+}

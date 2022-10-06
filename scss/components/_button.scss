@@ -1,0 +1,33 @@
+.boton-tienda,
+.boton {
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: $fuente-primaria;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-secundario;
+    transition: all ease-in-out 0.5s;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.boton-tienda {
+  width: 100px;
+  background-color: $color-terciario;
+}
+
+.boton {
+  background-color: $color-terciario;
+}

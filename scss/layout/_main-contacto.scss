@@ -1,0 +1,28 @@
+.margen {
+  margin-top: 150px;
+}
+
+.contenedor-form {
+  @include flex(row-reverse, center, center);
+  margin-top: 90px;
+}
+
+.contenedor-campos {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 1rem;
+}
+
+.campo input,
+.campo textarea {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #ffd093;
+  border: none;
+  width: 100%;
+}
+
+.campo label {
+  display: block;
+}
