@@ -5,10 +5,13 @@
 }
 
 .galeria-box {
-  height: 150px;
-  width: 125px;
-  background-color: $color-blanco;
-  margin: 20px;
+  margin: 2rem 1rem;
+
+  img {
+    height: auto;
+    max-width: 100%;
+    overflow: auto;
+  }
 }
 
 .galeria-titulo {
