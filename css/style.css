@@ -280,36 +280,37 @@ header {
 
 .nav-links {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
   text-transform: uppercase;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .nav-links li::after {
+    content: "";
+    display: block;
+    background: var(--negro);
+    opacity: 0;
+    height: 4px;
+    max-width: 40px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out; }
+  .nav-links li:hover::after {
+    opacity: 1;
+    background: #ffe673; }
   .nav-links li a {
     text-decoration: none;
     color: #000;
     position: relative;
+    padding: 10px;
     text-align: center;
     transition: color 0.3s ease-in-out; }
     .nav-links li a:hover {
       color: #ffe673; }
-      .nav-links li a:hover::after {
-        opacity: 1;
-        background: #ffe673; }
-    .nav-links li a::after {
-      content: "";
-      display: block;
-      background: var(--negro);
-      opacity: 0;
-      height: 4px;
-      max-width: 40px;
-      border-radius: 10px;
-      width: 100%;
-      margin: 0 auto;
-      margin-top: 5px;
-      transition: all 0.3s ease-in-out; }
 
 .logo {
   height: 100px;
