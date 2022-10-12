@@ -267,13 +267,13 @@ header {
   background-size: cover; }
 
 .header-inicio {
-  background: linear-gradient(0deg, #fff, transparent 30%), url("../../imagenes/foto-inicio.jpg") no-repeat center center/cover; }
+  background: linear-gradient(0deg, #fff, transparent 30%), url("../imagenes/foto-inicio.jpg") no-repeat center center/cover; }
 
 .header-lafl {
-  background-image: url("../../imagenes/LAFL/lafl-fondo.jpg"); }
+  background-image: url("../imagenes/LAFL/lafl-fondo.jpg"); }
 
 .header-kqft {
-  background-image: url("../../imagenes/KQFT/kqft-fondo.jpg"); }
+  background-image: url("../imagenes/KQFT/kqft-fondo.jpg"); }
 
 .header-8 {
   height: 8vh; }
