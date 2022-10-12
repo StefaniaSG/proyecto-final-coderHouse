@@ -1,17 +1,17 @@
 .bloque-naranja {
   background-color: $color-terciario;
-  height: 60vh;
-  margin: 100px auto;
-  @include flex(row, center, center);
+  margin: 350px auto 30px auto;
+  padding-top: 1rem;
+  @include flex(column, center, center);
+  gap: 2rem;
 }
 
 .imagen-sobre-mi {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
 }
 
 .titulo-sobre-mi {
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -44,6 +44,7 @@
   max-width: 700px;
   margin: 0 auto;
   column-gap: 2em;
+  width: 80%;
 
   div h2 {
     text-align: center;

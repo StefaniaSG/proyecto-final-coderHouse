@@ -20,7 +20,11 @@
   margin-top: 5px;
   background-color: #ffd093;
   border: none;
-  width: 100%;
+  width: 92%;
+
+  &:focus {
+    outline-color: $color-terciario;
+  }
 }
 
 .campo label {

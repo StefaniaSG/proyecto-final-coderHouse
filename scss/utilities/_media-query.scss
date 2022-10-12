@@ -78,3 +78,20 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (min-width: 768px) {
+  .bloque-naranja {
+    flex-direction: row;
+    margin-top: 100px;
+    height: 60vh;
+  }
+
+  .imagen-sobre-mi {
+    height: 300px;
+    width: 300px;
+  }
+
+  .titulo-sobre-mi {
+    margin-left: 20px;
+  }
+}
