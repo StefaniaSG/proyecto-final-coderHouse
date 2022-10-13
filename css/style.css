@@ -345,7 +345,8 @@ header {
   position: relative; }
 
 .p-inicio {
-  text-align: center; }
+  text-align: center;
+  font-size: 1.2em; }
 
 .primer-articulo,
 .segundo-articulo {
@@ -364,12 +365,12 @@ header {
 .title-lafl {
   text-align: center;
   margin: 20px;
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
 .circulo-fondo {
   background-color: #ffbf69;
-  width: 9em;
-  height: 9em;
+  width: 9.5em;
+  height: 9.5em;
   border-radius: 100%;
   padding: 0.8em; }
 
@@ -412,10 +413,9 @@ header {
     margin-bottom: 20px;
     padding: 15px; }
 
-.caja-foto-sobre-mi {
-  background-color: #ffbf69;
-  height: 400px;
+.caja-foto-sobre-mi img {
   width: 300px;
+  margin-top: 50px;
   border-radius: 25px; }
 
 .contenedor-sobre-mi {
@@ -424,7 +424,7 @@ header {
   align-items: center;
   place-content: center;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 100px auto;
   column-gap: 2em;
   width: 80%; }
   .contenedor-sobre-mi div h2 {

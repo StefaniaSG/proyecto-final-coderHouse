@@ -30,10 +30,11 @@
 }
 
 .caja-foto-sobre-mi {
-  background-color: $color-terciario;
-  height: 400px;
-  width: 300px;
-  border-radius: 25px;
+  img {
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 25px;
+  }
 }
 
 .contenedor-sobre-mi {
@@ -42,7 +43,7 @@
   align-items: center;
   place-content: center;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 100px auto;
   column-gap: 2em;
   width: 80%;
 
