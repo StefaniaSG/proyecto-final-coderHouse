@@ -93,7 +93,7 @@
     font-size: 1.2em; } }
 
 .galeria {
-  background-color: #8ecae6;
+  background-color: #86dfff;
   display: flex;
   justify-content: center; }
 
@@ -109,7 +109,7 @@
   justify-content: center;
   margin: 20px auto; }
   .galeria-titulo h2 {
-    background-color: #8ecae6;
+    background-color: #86dfff;
     padding: 0.5em;
     border-radius: 35px;
     text-transform: uppercase; }
@@ -154,7 +154,7 @@
 
 .divisor,
 .personajes-titulo h2 {
-  background-color: #8ecae6;
+  background-color: #86dfff;
   padding: 1em 1.7em;
   text-transform: uppercase;
   text-align: center;
@@ -188,10 +188,11 @@
 .caja-imagen {
   height: 150px;
   width: 125px;
-  background-color: #8ecae6;
   margin: 20px;
   border-radius: 15px;
   flex-direction: column; }
+  .caja-imagen img {
+    height: 150px; }
 
 @media (min-width: 768px) {
   .contenedor-personajes {
@@ -250,7 +251,7 @@ p {
   display: none; }
 
 .celeste {
-  background-color: #8ecae6 !important; }
+  background-color: #86dfff !important; }
 
 .amarillo {
   background-color: #ffe673 !important; }
@@ -260,6 +261,10 @@ p {
     margin-top: 400px; }
   .naranja {
     background-color: #ffbf69; } }
+
+img {
+  width: 100%;
+  border-radius: 15px; }
 
 header {
   height: 90vh;
