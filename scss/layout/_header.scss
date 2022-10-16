@@ -5,21 +5,68 @@ header {
   background-size: cover;
 }
 
-.header-inicio {
-  background: linear-gradient(0deg, #fff, transparent 30%),
-    url("../imagenes/foto-inicio.jpg") no-repeat center center / cover;
+@media (max-width: 768px) {
+  nav.activo {
+    left: 0;
+  }
+
+  .menu-hamburguesa {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .menu-hamburguesa span {
+    width: 35px;
+    height: 4px;
+    margin-bottom: 6px;
+    position: relative;
+    background: $color-negro;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .menu-hamburguesa.activo span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, -2px);
+  }
+
+  .menu-hamburguesa.activo span:nth-child(2) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-hamburguesa.activo span:nth-child(3) {
+    display: none;
+  }
 }
 
-.header-lafl {
-  background-image: url("../imagenes/LAFL/lafl-fondo.jpg");
-}
+// .nav {
+//   @include flex(row, center, center);
+//   margin: 0 auto;
+//   padding: 20px 0;
+//   background-color: #fffffff2;
+//   gap: 1rem;
+// }
 
-.header-kqft {
-  background-image: url("../imagenes/KQFT/kqft-fondo.jpg");
-}
+.barra-navegacion {
+  @include flex(row, space-evenly, center);
+  margin: 0 auto;
+  padding: 25px 0;
+  background-color: #fffffff2;
+  gap: 1rem;
 
-.header-8 {
-  height: 8vh;
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 .nav-links {
@@ -62,23 +109,27 @@ header {
   }
 }
 
-.logo {
-  height: 100px;
-  width: 100px;
-}
-
-.nav {
-  @include flex(column, center, center);
-  margin: 0 auto;
-  padding: 20px 0;
-  background-color: #fffffff2;
-  gap: 1rem;
-}
-
 .nav-opacidad-40 {
   background-color: #ffffff66;
 }
 
 .nav-opacidad-75 {
   background-color: #ffffffbf;
+}
+
+.header-inicio {
+  background: linear-gradient(0deg, #fff, transparent 30%),
+    url("../imagenes/foto-inicio.jpg") no-repeat center center / cover;
+}
+
+.header-lafl {
+  background-image: url("../imagenes/LAFL/lafl-fondo.jpg");
+}
+
+.header-kqft {
+  background-image: url("../imagenes/KQFT/kqft-fondo.jpg");
+}
+
+.header-8 {
+  height: 8vh;
 }

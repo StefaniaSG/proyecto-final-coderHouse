@@ -44,21 +44,29 @@
   </head>
   <body>
     <header class="header-kqft">
-      <nav class="nav nav-opacidad-75">
-        <div>
+      <div class="barra-navegacion nav-opacidad-75">
+        <div class="logo">
           <a href="../index.html"
-            ><img class="logo" src="../imagenes/logo.png" alt="Logo"
+            ><img src="../imagenes/logo.png" alt="Logo"
           /></a>
         </div>
 
-        <ul class="nav-links">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./LAFL.html">LAFL</a></li>
-          <li><a href="#">KQFT</a></li>
-          <li><a href="./sobre-mi.html">Sobre Mí</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav id="nav-bar" class="nav">
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./LAFL.html">LAFL</a></li>
+            <li><a href="#">KQFT</a></li>
+            <li><a href="./sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div id="boton-menu" class="menu-hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <div class="contenedor-etiqueta">
         <p class="etiqueta">Saga</p>
       </div>
@@ -387,5 +395,6 @@
         ],
       });
     </script>
+    <script src="../main.js"></script>
   </body>
 </html>

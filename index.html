@@ -31,21 +31,27 @@
   </head>
   <body>
     <header class="header-inicio">
-      <nav class="nav">
-        <div>
-          <a href="#"
-            ><img class="logo" src="./imagenes/logo.png" alt="Logo"
-          /></a>
+      <div class="barra-navegacion">
+        <div class="logo">
+          <a href="#"><img src="./imagenes/logo.png" alt="Logo" /></a>
         </div>
 
-        <ul class="nav-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="./pages/LAFL.html">LAFL</a></li>
-          <li><a href="./pages/KQFT.html">KQFT</a></li>
-          <li><a href="./pages/sobre-mi.html">Sobre Mí</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav id="nav-bar" class="nav">
+          <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./pages/LAFL.html">LAFL</a></li>
+            <li><a href="./pages/KQFT.html">KQFT</a></li>
+            <li><a href="./pages/sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div id="boton-menu" class="menu-hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -140,5 +146,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="main.js"></script>
   </body>
 </html>

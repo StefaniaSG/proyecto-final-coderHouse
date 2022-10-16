@@ -257,8 +257,6 @@ p {
   background-color: #ffe673 !important; }
 
 @media (max-width: 768px) {
-  .margin-top {
-    margin-top: 400px; }
   .naranja {
     background-color: #ffbf69; } }
 
@@ -272,17 +270,49 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.header-inicio {
-  background: linear-gradient(0deg, #fff, transparent 30%), url("../imagenes/foto-inicio.jpg") no-repeat center center/cover; }
+@media (max-width: 768px) {
+  nav.activo {
+    left: 0; }
+  .menu-hamburguesa {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+  .menu-hamburguesa span {
+    width: 35px;
+    height: 4px;
+    margin-bottom: 6px;
+    position: relative;
+    background: #000;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear; }
+  .menu-hamburguesa.activo span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, -2px); }
+  .menu-hamburguesa.activo span:nth-child(2) {
+    transform: rotate(-45deg) translate(-5px, 6px); }
+  .menu-hamburguesa.activo span:nth-child(3) {
+    display: none; } }
 
-.header-lafl {
-  background-image: url("../imagenes/LAFL/lafl-fondo.jpg"); }
-
-.header-kqft {
-  background-image: url("../imagenes/KQFT/kqft-fondo.jpg"); }
-
-.header-8 {
-  height: 8vh; }
+.barra-navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  padding: 25px 0;
+  background-color: #fffffff2;
+  gap: 1rem; }
+  .barra-navegacion .logo {
+    height: 100px;
+    width: 100px; }
 
 .nav-links {
   font-family: "Josefin Sans", sans-serif;
@@ -317,25 +347,23 @@ header {
     .nav-links li a:hover {
       color: #ffe673; }
 
-.logo {
-  height: 100px;
-  width: 100px; }
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 20px 0;
-  background-color: #fffffff2;
-  gap: 1rem; }
-
 .nav-opacidad-40 {
   background-color: #ffffff66; }
 
 .nav-opacidad-75 {
   background-color: #ffffffbf; }
+
+.header-inicio {
+  background: linear-gradient(0deg, #fff, transparent 30%), url("../imagenes/foto-inicio.jpg") no-repeat center center/cover; }
+
+.header-lafl {
+  background-image: url("../imagenes/LAFL/lafl-fondo.jpg"); }
+
+.header-kqft {
+  background-image: url("../imagenes/KQFT/kqft-fondo.jpg"); }
+
+.header-8 {
+  height: 8vh; }
 
 .inicio {
   display: flex;
@@ -392,7 +420,7 @@ header {
 
 .bloque-naranja {
   background-color: #ffbf69;
-  margin: 350px auto 30px auto;
+  margin: 90px auto 30px auto;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -439,7 +467,7 @@ header {
     margin: 30px auto; }
 
 .margen {
-  margin-top: 150px; }
+  margin-top: 100px; }
 
 .contenedor-form {
   display: flex;
@@ -515,11 +543,6 @@ footer {
     flex-direction: row; } }
 
 @media (min-width: 768px) {
-  .nav {
-    flex-direction: row;
-    justify-content: space-evenly; } }
-
-@media (min-width: 768px) {
   .titulo-inicio::before {
     content: "";
     display: block;
@@ -565,3 +588,45 @@ footer {
     width: 300px; }
   .titulo-sobre-mi {
     margin-left: 20px; } }
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media (min-width: 768px) {
+  .menu-hamburguesa {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .logo {
+    width: 80px; }
+  img {
+    width: 100%; }
+  .barra-navegacion {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    background-color: #ffffff; }
+  .nav-opacidad-40 {
+    background-color: #ffffffa8; }
+  .nav-opacidad-75 {
+    background-color: #ffffffbf; } }
