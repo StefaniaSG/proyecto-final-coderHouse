@@ -67,12 +67,6 @@
 }
 
 @media (min-width: 768px) {
-  .contenedor-sobre-mi {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
   .bloque-naranja {
     flex-direction: row;
     margin-top: 100px;
@@ -80,12 +74,34 @@
   }
 
   .imagen-sobre-mi {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
 
   .titulo-sobre-mi {
     margin-left: 20px;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .contenedor-sobre-mi {
+    div h2 {
+      position: absolute;
+      font-size: 30px;
+      top: 40px;
+      text-transform: uppercase;
+    }
+
+    div p {
+      margin-top: 130px;
+      padding-left: 15px;
+    }
   }
 }
 

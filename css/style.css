@@ -40,7 +40,7 @@
 .boton-tienda {
   width: 100px; }
   .boton-tienda:hover {
-    background-color: #fdd5356e; }
+    background-color: #ffefa8; }
 
 .banner-box {
   display: flex;
@@ -58,7 +58,7 @@
 
 @media (min-width: 768px) {
   .banner {
-    background-color: #fdd5356e;
+    background-color: #ffefa8;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
@@ -254,7 +254,7 @@ p {
 
 @media (max-width: 768px) {
   .naranja {
-    background-color: #fdd5356e; } }
+    background-color: #ffefa8; } }
 
 img {
   width: 100%;
@@ -404,7 +404,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fdd5356e;
+  background-color: #ffefa8;
   position: relative;
   width: 15rem;
   height: 17rem;
@@ -447,9 +447,9 @@ header {
   margin: 20px 0; }
 
 .bloque-naranja {
-  background-color: #fdd5356e;
+  background-color: #ffefa8;
   margin: 90px auto 30px auto;
-  padding-top: 1rem;
+  padding-block: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -467,11 +467,16 @@ header {
   .titulo-sobre-mi h1 {
     background-color: #ffffff;
     margin-bottom: 20px;
-    padding: 15px; }
+    width: auto;
+    max-width: 400px;
+    padding: 15px;
+    letter-spacing: 7px;
+    text-transform: uppercase; }
   .titulo-sobre-mi p {
     background-color: #ffffff;
     margin-bottom: 20px;
-    padding: 15px; }
+    padding: 15px;
+    letter-spacing: 3px; }
 
 .caja-foto-sobre-mi img {
   width: 300px;
@@ -479,20 +484,26 @@ header {
   border-radius: 25px; }
 
 .contenedor-sobre-mi {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  place-content: center;
   max-width: 700px;
-  margin: 100px auto;
+  margin: 70px auto;
   column-gap: 2em;
-  width: 80%; }
+  width: 90%;
+  position: relative; }
+  .contenedor-sobre-mi div img {
+    border-radius: 0; }
   .contenedor-sobre-mi div h2 {
     text-align: center;
-    background-color: #fdd5356e;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 30px auto; }
+    background-color: #ffefa8;
+    padding: 20px 0;
+    margin: 30px auto;
+    letter-spacing: 3px;
+    width: 100%;
+    max-width: 470px; }
+  .contenedor-sobre-mi div p {
+    line-height: 1.2; }
 
 .margen {
   margin-top: 100px; }
@@ -519,7 +530,7 @@ header {
   width: 92%; }
   .campo input:focus,
   .campo textarea:focus {
-    outline-color: #fdd5356e; }
+    outline-color: #ffefa8; }
 
 .campo label {
   display: block; }
@@ -528,7 +539,7 @@ footer {
   margin-top: 100px; }
 
 .iconos-footer {
-  background-color: #fdd5356e;
+  background-color: #ffefa8;
   background-size: auto;
   display: flex;
   flex-direction: row;
@@ -604,19 +615,27 @@ footer {
     width: 90vw; } }
 
 @media (min-width: 768px) {
-  .contenedor-sobre-mi {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (min-width: 768px) {
   .bloque-naranja {
     flex-direction: row;
     margin-top: 100px;
     height: 60vh; }
   .imagen-sobre-mi {
-    height: 300px;
-    width: 300px; }
+    height: 400px;
+    width: 400px; }
   .titulo-sobre-mi {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+    .titulo-sobre-mi h1 {
+      font-size: 60px; }
+    .titulo-sobre-mi p {
+      font-size: 30px; }
+  .contenedor-sobre-mi div h2 {
+    position: absolute;
+    font-size: 30px;
+    top: 40px;
+    text-transform: uppercase; }
+  .contenedor-sobre-mi div p {
+    margin-top: 130px;
+    padding-left: 15px; } }
 
 @media (max-width: 768px) {
   nav {
