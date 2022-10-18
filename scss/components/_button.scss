@@ -11,9 +11,10 @@
   border-radius: 16px;
   font-family: $fuente-primaria;
   text-transform: uppercase;
+  background-color: $color-contraste;
 
   &:hover {
-    background-color: $color-secundario;
+    background-color: $color-blanco;
     transition: all ease-in-out 0.5s;
   }
 
@@ -25,9 +26,7 @@
 
 .boton-tienda {
   width: 100px;
-  background-color: $color-terciario;
-}
-
-.boton {
-  background-color: $color-terciario;
+  &:hover {
+    background-color: $color-terciario;
+  }
 }

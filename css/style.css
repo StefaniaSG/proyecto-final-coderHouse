@@ -26,10 +26,11 @@
   cursor: pointer;
   border-radius: 16px;
   font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: #ffc041; }
   .boton-tienda:hover,
   .boton:hover {
-    background-color: #ffe673;
+    background-color: #ffffff;
     transition: all ease-in-out 0.5s; }
   .boton-tienda a,
   .boton a {
@@ -37,11 +38,9 @@
     color: #000; }
 
 .boton-tienda {
-  width: 100px;
-  background-color: #ffbf69; }
-
-.boton {
-  background-color: #ffbf69; }
+  width: 100px; }
+  .boton-tienda:hover {
+    background-color: #fdd5356e; }
 
 .banner-box {
   display: flex;
@@ -59,7 +58,7 @@
 
 @media (min-width: 768px) {
   .banner {
-    background-color: #ffbf69;
+    background-color: #fdd5356e;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
@@ -75,25 +74,6 @@
     text-align: center;
     margin: 10px 50px; } }
 
-.contenedor-etiqueta {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: 150px;
-  margin-right: 2em; }
-
-.etiqueta {
-  display: none; }
-
-@media (min-width: 768px) {
-  .etiqueta {
-    background-color: #ffffff;
-    display: inline;
-    padding: 0.8em;
-    font-weight: 700;
-    border-radius: 25px; } }
-
 .contenedor-sinopsis {
   max-width: 750px;
   margin: 40px auto;
@@ -107,7 +87,7 @@
     font-size: 1.2em; } }
 
 .galeria {
-  background-color: #86dfff;
+  background-color: #76b6cd;
   display: flex;
   justify-content: center; }
 
@@ -123,7 +103,7 @@
   justify-content: center;
   margin: 20px auto; }
   .galeria-titulo h2 {
-    background-color: #86dfff;
+    background-color: #76b6cd;
     padding: 0.5em;
     border-radius: 35px;
     text-transform: uppercase; }
@@ -168,7 +148,7 @@
 
 .divisor,
 .personajes-titulo h2 {
-  background-color: #86dfff;
+  background-color: #76b6cd;
   padding: 1em 1.7em;
   text-transform: uppercase;
   text-align: center;
@@ -267,21 +247,18 @@ p {
   display: none; }
 
 .celeste {
-  background-color: #86dfff !important; }
+  background-color: #76b6cd !important; }
 
 .amarillo {
   background-color: #ffe673 !important; }
 
 @media (max-width: 768px) {
   .naranja {
-    background-color: #ffbf69; } }
+    background-color: #fdd5356e; } }
 
 img {
   width: 100%;
   border-radius: 15px; }
-
-.mt-100 {
-  margin-top: 95px; }
 
 .pt-170 {
   padding-top: 170px; }
@@ -411,7 +388,7 @@ header {
   flex-direction: column; }
 
 .titulo-inicio {
-  font-size: 1.5em;
+  font-size: 2rem;
   text-align: center;
   margin: 30px auto 20px auto;
   text-transform: uppercase;
@@ -423,10 +400,15 @@ header {
 
 .primer-articulo,
 .segundo-articulo {
-  background-color: #ffffff;
-  width: 15em;
-  height: 20em;
-  margin: 1.5em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fdd5356e;
+  position: relative;
+  width: 15rem;
+  height: 17rem;
+  margin: 150px 50px;
   margin-bottom: 90px;
   padding: 2.5em 1.5em;
   text-align: center;
@@ -441,7 +423,12 @@ header {
   font-size: 1.3em; }
 
 .circulo-fondo {
-  background-color: #ffbf69;
+  background-color: #ffffff;
+  position: absolute;
+  top: -100px;
+  left: 50px;
+  right: 50px;
+  border: 2px solid #000;
   width: 9.5em;
   height: 9.5em;
   border-radius: 100%;
@@ -460,7 +447,7 @@ header {
   margin: 20px 0; }
 
 .bloque-naranja {
-  background-color: #ffbf69;
+  background-color: #fdd5356e;
   margin: 90px auto 30px auto;
   padding-top: 1rem;
   display: flex;
@@ -502,7 +489,7 @@ header {
   width: 80%; }
   .contenedor-sobre-mi div h2 {
     text-align: center;
-    background-color: #ffbf69;
+    background-color: #fdd5356e;
     padding: 20px;
     border-radius: 15px;
     margin: 30px auto; }
@@ -532,7 +519,7 @@ header {
   width: 92%; }
   .campo input:focus,
   .campo textarea:focus {
-    outline-color: #ffbf69; }
+    outline-color: #fdd5356e; }
 
 .campo label {
   display: block; }
@@ -541,7 +528,7 @@ footer {
   margin-top: 100px; }
 
 .iconos-footer {
-  background-color: #ffbf69;
+  background-color: #fdd5356e;
   background-size: auto;
   display: flex;
   flex-direction: row;
@@ -592,7 +579,7 @@ footer {
     height: 2px;
     background: #000;
     position: absolute;
-    left: 200px;
+    left: 230px;
     top: 50%; }
   .titulo-inicio::after {
     content: "";
@@ -601,7 +588,7 @@ footer {
     height: 2px;
     background: #000;
     position: absolute;
-    right: 200px;
+    right: 230px;
     top: 50%; } }
 
 @media (max-width: 768px) {
