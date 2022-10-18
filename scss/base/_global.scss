@@ -9,6 +9,7 @@ body {
 
 p {
   font-family: $fuente-secundaria;
+  font-size: 1.2rem;
 }
 
 .interletrado {
@@ -41,4 +42,16 @@ p {
 img {
   width: 100%;
   border-radius: 15px;
+}
+
+.mt-100 {
+  margin-top: 95px;
+}
+
+.pt-170 {
+  padding-top: 170px;
+}
+
+.pt-150 {
+  padding-top: 150px;
 }

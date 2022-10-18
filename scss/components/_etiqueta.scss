@@ -1,6 +1,6 @@
 .contenedor-etiqueta {
   @include flex(row, flex-end, flex-end);
-  height: 400px;
+  margin-top: 150px;
   margin-right: 2em;
 }
 

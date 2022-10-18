@@ -24,13 +24,6 @@
   }
 }
 
-// @media (min-width: 768px) {
-//   .nav {
-//     flex-direction: row;
-//     justify-content: space-evenly;
-//   }
-// }
-
 @media (min-width: 768px) {
   .titulo-inicio::before {
     content: "";
@@ -147,5 +140,23 @@
 
   .nav-opacidad-75 {
     background-color: #ffffffbf;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__titulo {
+    font-size: 20px;
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .br__titulo {
+    display: none;
   }
 }

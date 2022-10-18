@@ -1,0 +1,20 @@
+@keyframes opacityOnLoad {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blur {
+  height: inherit;
+  animation: brightnessOnLoad 4s forwards;
+}
+
+@keyframes brightnessOnLoad {
+  100% {
+    backdrop-filter: brightness(60%);
+  }
+}
