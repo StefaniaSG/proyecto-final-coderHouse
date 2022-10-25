@@ -4,23 +4,15 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .column-reverse {
-    flex-direction: column-reverse !important;
+    flex-direction: row;
   }
 }
 
 @media (min-width: 768px) {
   .ocultar {
     display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .nav-links {
-    justify-content: space-between;
-    gap: 1.5em;
-    flex-direction: row;
   }
 }
 
@@ -48,7 +40,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .primer-articulo {
     margin-bottom: 20px;
   }
@@ -106,6 +98,12 @@
 }
 
 @media (max-width: 768px) {
+  .titulo-sobre-mi {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
   nav {
     position: fixed;
     top: 0;
@@ -124,12 +122,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu-hamburguesa {
-    display: none;
   }
 }
 
@@ -174,5 +166,19 @@
 @media (min-width: 768px) {
   .br__titulo {
     display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    justify-content: space-between;
+    gap: 1.5em;
+    flex-direction: row;
   }
 }

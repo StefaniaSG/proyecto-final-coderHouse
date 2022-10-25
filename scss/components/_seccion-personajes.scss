@@ -21,7 +21,7 @@
   margin-bottom: 100px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .divisor,
   .personajes-titulo h2 {
     margin: 100px auto 50px auto;

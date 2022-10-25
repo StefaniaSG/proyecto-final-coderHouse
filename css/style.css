@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@200;300;400&display=swap");
 @keyframes opacityOnLoad {
@@ -162,7 +163,7 @@
   margin-top: 50px;
   margin-bottom: 100px; }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .divisor,
   .personajes-titulo h2 {
     margin: 100px auto 50px auto; } }
@@ -265,6 +266,12 @@ img {
 
 .pt-150 {
   padding-top: 150px; }
+
+.tamaño-parrafos {
+  width: 230px; }
+
+.column-reverse {
+  flex-direction: column-reverse; }
 
 header {
   height: 90vh;
@@ -525,7 +532,7 @@ header {
   border-radius: 10px;
   padding: 10px;
   margin-top: 5px;
-  background-color: #ffd093;
+  background-color: #fff4bc;
   border: none;
   width: 92%; }
   .campo input:focus,
@@ -568,19 +575,13 @@ footer {
   .interletrado {
     letter-spacing: 0.5em; } }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .column-reverse {
-    flex-direction: column-reverse !important; } }
+    flex-direction: row; } }
 
 @media (min-width: 768px) {
   .ocultar {
     display: block; } }
-
-@media (min-width: 768px) {
-  .nav-links {
-    justify-content: space-between;
-    gap: 1.5em;
-    flex-direction: row; } }
 
 @media (min-width: 768px) {
   .titulo-inicio::before {
@@ -602,7 +603,7 @@ footer {
     right: 230px;
     top: 50%; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .primer-articulo {
     margin-bottom: 20px; } }
 
@@ -638,6 +639,10 @@ footer {
     padding-left: 15px; } }
 
 @media (max-width: 768px) {
+  .titulo-sobre-mi {
+    align-items: center; } }
+
+@media (max-width: 768px) {
   nav {
     position: fixed;
     top: 0;
@@ -654,10 +659,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; } }
-
-@media (min-width: 768px) {
-  .menu-hamburguesa {
-    display: none; } }
 
 @media (max-width: 768px) {
   .logo {
@@ -690,3 +691,13 @@ footer {
 @media (min-width: 768px) {
   .br__titulo {
     display: none; } }
+
+@media (min-width: 769px) {
+  .menu-hamburguesa {
+    display: none; } }
+
+@media (min-width: 769px) {
+  .nav-links {
+    justify-content: space-between;
+    gap: 1.5em;
+    flex-direction: row; } }
