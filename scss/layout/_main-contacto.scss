@@ -5,6 +5,7 @@
 .contenedor-form {
   @include flex(row-reverse, center, center);
   margin-top: 90px;
+  gap: 3rem;
 }
 
 .contenedor-campos {
@@ -29,4 +30,14 @@
 
 .campo label {
   display: block;
+  font-weight: 600;
+}
+
+.imagen-contacto {
+  @include flex(row, center, center);
+
+  img {
+    max-width: 470px;
+    padding-bottom: 90px;
+  }
 }
