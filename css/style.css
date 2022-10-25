@@ -177,7 +177,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 300px;
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
@@ -196,7 +196,8 @@
 
 @media (min-width: 768px) {
   .contenedor-personajes {
-    flex-direction: row; }
+    flex-direction: row;
+    max-width: 1200px; }
   .alinear-izquierda {
     text-align-last: left; }
   .alinear-derecha {
@@ -276,6 +277,9 @@ img {
 
 .column-reverse {
   flex-direction: column-reverse; }
+
+p {
+  padding-inline: 10px; }
 
 header {
   height: 90vh;
