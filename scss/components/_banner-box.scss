@@ -10,7 +10,7 @@
   transform: translateY(-8%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .banner {
     background-color: $color-terciario;
     margin: 0 auto;
@@ -24,6 +24,7 @@
   .banner-box {
     width: 30vw;
     max-width: 800px;
+    padding-inline: 2rem;
   }
 }
 

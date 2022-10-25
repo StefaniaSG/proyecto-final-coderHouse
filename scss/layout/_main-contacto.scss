@@ -1,6 +1,12 @@
 .margen {
   margin-top: 100px;
 }
+.imagen-contacto {
+  img {
+    max-width: 470px;
+    padding-bottom: 90px;
+  }
+}
 
 .contenedor-form {
   @include flex(row-reverse, center, center);
@@ -31,13 +37,4 @@
 .campo label {
   display: block;
   font-weight: 600;
-}
-
-.imagen-contacto {
-  @include flex(row, center, center);
-
-  img {
-    max-width: 470px;
-    padding-bottom: 90px;
-  }
 }

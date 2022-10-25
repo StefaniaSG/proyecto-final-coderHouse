@@ -3,24 +3,27 @@
   column-gap: 1em;
   margin: 50px auto;
   padding: 40px;
+  max-width: 300px;
 
   p {
     font-size: 1.2em;
     text-align: center;
+    padding: 0 20px;
   }
 }
 
 .icono-1 {
-  margin-right: 260px;
+  align-self: flex-start;
 }
 
 .icono-2 {
-  margin-left: 240px;
+  align-self: flex-end;
 }
 
 @media (min-width: 768px) {
   .flex-frase {
     margin: 100px auto;
+    max-width: 700px;
 
     p {
       font-size: 1.5em;
